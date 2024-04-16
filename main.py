@@ -3,7 +3,7 @@ import math as m
 
 def GetInBinary(size, num):
     ret = ""
-    while (num != 0 or size == 1):
+    while ( size > 0):
         if num - m.pow(2, size - 1) >= 0:
             num -= m.pow(2, size - 1)
             ret += '1'
